@@ -1,42 +1,33 @@
 <html>
 	<title>goodol</title>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 		<link rel="icon" href="./favicon.png">
 	</head>
 	<body>
 		<style>
-			.green_window {
-			display: inline-block;
-			width: 366px; height: 34px;
-			border: 3px solid #cccccc;
-			background: white;
+			.searchwindow {
+			height: 40px;
+			width: 85%;
+			border: 1px solid #cccccc;
+			background: #ffffff;
 			}
 			.input_text {
-			width: 348px; height: 21px;
-			margin: 6px 0 0 9px;
-			border: 0;
-			line-height: 21px;
-			font-weight: bold;
 			font-size: 16px;
+			width: 80%;
+			padding: 10px;
+			border: 0px;
 			outline: none;
+			float: left;
 			}
 			.sch_smit {
-			width: 54px; height: 40px;
-			margin: 0; border: 0;
-			vertical-align: top;
+			width: 50px;
+			height: 100%;
+			border: 0px;
 			background: #cccccc;
-			color: #ffffff;
-			font-weight: bold;
-			border-radius: 1px;
-			cursor: pointer;
-			}
-			form {
-			display: inline
-			}
-			.fullscreen {
-			max-width: 80%;
-			height: auto;
+			outline: none;
+			float: right;
+			color: #ffffff
 			}
 		</style>
 		<center>
@@ -44,12 +35,11 @@
 			<a href="./index.html"><img src="./goodol.png" width="55%" height="auto"></a>
 			<br>
 			<br>
-			<div class="fullscreen">
+			<div>
 				<form name="search" method="get" action="search.html">
-					<span class="green_window">
+					<div class="searchwindow">
 						<input type="search" name="q" class="input_text" placeholder="검색어를 입력하세요">
-					</span>
-					<button class="sch_smit">검색</button>
+						<button class="sch_smit">검색</button>
 				</form>
 			</div>
 		</center>
