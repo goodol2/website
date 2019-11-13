@@ -8,13 +8,13 @@
 		<style>
 			.green_window {
 			display: inline-block;
-			width: 50%; height: 34px;
+			width: 366px; height: 34px;
 			border: 3px solid #cccccc;
 			background: white;
 			}
 			.input_text {
-			width: 95%; height: 21px;
-			margin: 6px 0 0 0;
+			width: 348px; height: 21px;
+			margin: 6px 0 0 9px;
 			border: 0;
 			line-height: 21px;
 			font-weight: bold;
@@ -34,13 +34,17 @@
 			form {
 			display: inline
 			}
+			.fullscreen {
+			max-width: 90%;
+			height: auto;
+			}
 		</style>
 		<center>
 			<br>
 			<a href="./index.html"><img src="./goodol.png" width="55%" height="auto"></a>
 			<br>
 			<br>
-			<div>
+			<div class="fullscreen">
 				<form name="search" method="get" action="search.html">
 					<span class="green_window">
 						<input type="search" name="q" class="input_text" placeholder="검색어를 입력하세요">
