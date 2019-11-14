@@ -41,17 +41,28 @@
 			}
 		</style>
 		<br>
+		<script type="text/javascript">
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		</script>
 		<form name="getsearch" method="get">
 		<div class="searchbox">
 			<a href="./index.html"><img src="./goodol.png" height="40px" width="auto"></a>
 			&nbsp;
 			&nbsp;
 			<div class="searchwindow">
-				<input type="search" id="search" name="q" placeholder="검색어를 입력하세요" class='input_text' value='<?php echo $_GET["q"];?>'>
+				<input type="search" id="search" name="q" placeholder="검색어를 입력하세요" class='input_text'>
 				<button class="sch_smit">검색</button>
 			</div>
 		</div>
 		</form>
+		<script type="text/javascript">
+		document.getElementById('search').value = getParameterByName('q');
+		</script>
 		<script async src="https://cse.google.com/cse.js?cx=001307678989920408269:k9h9xxz6rrb"></script>
 		<div class="gcse-searchresults-only"></div>
 		<br>
