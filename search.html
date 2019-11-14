@@ -9,7 +9,7 @@
 			.searchwindow {
 			display: flex;
 			height: 40px;
-			width: 85%;
+			flex: 1;
 			border: 1px solid #cccccc;
 			background: #ffffff;
 			}
@@ -30,16 +30,28 @@
 			float: right;
 			color: #ffffff
 			}
+			img {
+			vertical-align: middle;
+			}
+			.searchbox {
+			display: flex;
+			height: 40px;
+			width: 85%;
+			background: #ffffff;
+			}
 		</style>
 		<br>
-		<center>
-			<form name="getsearch" method="get">
-				<div class="searchwindow">
-					<input type="search" name="q" placeholder="검색어를 입력하세요" class='input_text'>
-					<button class="sch_smit">검색</button>
-				</div>
-			</form>
-		</center>
+		<form name="getsearch" method="get">
+		<div class="searchbox">
+			<a href="./index.html"><img src="./goodol.png" height="40px" width="auto"></a>
+			&nbsp;
+			&nbsp;
+			<div class="searchwindow">
+				<input type="search" name="q" placeholder="검색어를 입력하세요" class='input_text'>
+				<button class="sch_smit">검색</button>
+			</div>
+		</div>
+		</form>
 		<script async src="https://cse.google.com/cse.js?cx=001307678989920408269:k9h9xxz6rrb"></script>
 		<div class="gcse-searchresults-only"></div>
 		<br>
