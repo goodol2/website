@@ -1,12 +1,18 @@
 <html>
-	<title>goodol</title>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-		<link rel="icon" href="./favicon.png">
-	</head>
-	<body>
-		<style>
+<title>goodol</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="./favicon.png">
+</head>
+<body>
+<style>
+                        .searchbox {
+     		        display: flex;
+     		        width: 85%;
+                        height: 40px;
+                        }
 			.searchwindow {
+			flex: 1;
 			display: flex;
 			height: 40px;
 			width: 85%;
@@ -15,39 +21,39 @@
 			}
 			.input_text {
 			flex: 1;
-			font-size: 16px;
+			font-size: 14px;
 			padding: 10px;
 			border: 0px;
 			outline: none;
 			float: left;
 			}
 			.sch_smit {
-			width: 50px;
-			height: 40px;
+			width: 42px;
+			height: 42px;
 			border: 0px;
-			background: #cccccc;
 			outline: none;
 			float: right;
-			color: #ffffff
 			}
-		</style>
-		<center>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<a href="./index.html"><img src="./goodol.png" width="55%" height="auto"></a>
-			<br>
-			<br>
-			<div>
-				<form name="search" id="search" method="get" action="./search.html">
-					<div class="searchwindow">
-						<input type="search" name="q" class="input_text" placeholder="검색어를 입력하세요">
-						<button class="sch_smit">검색</button>
-					</div>
-				</form>
-			</div>
-		</center>
-	</body>
+
+</style>
+<center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="./index.html"><img src="./goodol.png" width="55%" height="auto"></a>
+    <br>
+    <br>
+    <form name="search" id="search" method="get" action="./search.html">
+        <div class="searchbox">
+            <div class="searchwindow">
+                <input type="search" name="q" class="input_text" placeholder="검색어를 입력하세요">
+            </div>
+            <input class="sch_smit" type="image" src="./searchbutton.png" name="Submit"
+                   value="Submit">
+        </div>
+    </form>
+</center>
+</body>
 </html>
